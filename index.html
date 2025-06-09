@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container py-5">
+    <div class="input row">
+        <input type="text" placeholder="Name" class="col-12 my-2 name" id="name">
+        <input type="text" placeholder="Price" class="col-lg-5 my-2 price" id="price">
+        <div class="col-2"></div>
+        <input type="text" placeholder="Type" class="col-lg-5 my-2 type" id="type">
+        <textarea name="" id="cate" placeholder="category" class="col-12 my-2 cate" ></textarea>
+        <div class="button ">
+            <div class="btn btn-outline-light mx-2 my-4 bb" id="bb" onclick="Add()">Add products</div>
+            <div class="btn btn-outline-danger mx-2 my-4 clr" onclick="deletall()" id="deleet">Delet All</div>
+        </div>
+    </div>
+    <input type="text" class="col-12  my-4" placeholder="Search" id="search"  onkeyup="ssearch(this.value)">
+    <div class="output py-4">
+        <table class="table" id="table" >
+  <thead>
+    <tr>
+      <th scope="col">Index</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Type</th>
+      <th scope="col">Catagory</th>
+      <th scope="col">Update</th>
+      <th scope="col">Delet</th>
+    </tr>
+</thead>
+<tbody id="items"></tbody>
+    </div>
+
+
+</div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

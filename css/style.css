@@ -1,0 +1,49 @@
+body{
+    background-color: #000000;
+}
+.container{
+    input , textarea{
+        padding: 10px;
+        outline: none;
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        font-weight: bold;
+        font-size: 17px;
+        border-radius: 10px;
+        &::placeholder{
+            font-weight: bold;
+            color: white;
+            font-size: 17px;
+        }
+       
+        &:focus{
+            box-shadow: 1px 1px 5px 2px rgb(255, 255, 255);
+            
+        }
+    }
+     label{
+            color: white;
+            cursor: pointer;
+        }
+        .bb{
+            font-weight: bold;
+            font-size: 17px;
+        }
+        table{
+            color: white;
+            img{
+                width: 50px;
+                height: 50px;
+                /* border-radius: 50%; */
+                
+            }
+            th,td{
+                vertical-align: middle;
+
+            }
+        }
+}
+.clr{
+    display: none;
+}
